@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  margin:0;
+  padding: 0;
+  box-sizing: borer-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background: rgba(47, 150, 235, 0.3);
+}
+
+input {
+  width: 100%;
+  margin: 0.4rem 0;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0.2rem 0;
+
+}
+
+.input-element {
+  display: inline-block;
+}
+
+.page-wrapper {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  background-color: #fff;
+  padding: 10rem 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 1.5rem 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  background: linear-gradient(to left, #73a8e6, #6784e4);
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+}
+
+.form-heading {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 3rem;
+  left: 10rem;
+}
+
+.form-sign-up {
+  transform: translateX(5rem);
+  background-color: #fff;
+  padding: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 1.5rem 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.input-group > i {
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+  color:rgba(47, 150, 235, 1);
+  width: 1rem;
+}
+
+.input-group .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(47, 150, 235, 0.4);
+}
+
+.input-group .bar::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgba(47, 150, 235, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.5s;
+}
+
+.input-group input:focus + .bar::before {
+  width: 100%;
+}
