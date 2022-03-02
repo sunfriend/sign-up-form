@@ -149,3 +149,48 @@ input {
   font-size: 0.7rem;
   color:rgba(47, 150, 235, 1);
 }
+
+.submit-button {
+  margin: 0 auto;
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+  background: rgba(197, 225, 248, 1);
+  transition: background 0.5s;
+  color: rgba(47, 150, 235, 0.6);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgba(47, 150, 235, 0.8);
+}
+
+.switch-login {
+  text-align: center;
+}
+
+.switch-login a {
+  text-decoration: none;
+  color:rgba(141, 152, 161, 1);
+}
+
+.switch-login a > .login-span {
+  position: relative;
+  color:rgba(47, 150, 235, 1);
+}
+.switch-login a > .login-span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color:rgba(47, 150, 235, 1);
+  transition: all 0.5s;
+}
+.switch-login a > .login-span:hover::before {
+  width: 100%;
+}
