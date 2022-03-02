@@ -46,6 +46,7 @@ input {
   border-radius: 12px;
   box-shadow: 0 3px 1.5rem 1px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin: 3rem 0;
 }
 
 .form-container::before {
@@ -54,9 +55,9 @@ input {
   top: 0;
   left: 0;
   width: 100%;
-  height: 30rem;
+  height: 100%;
   background: linear-gradient(to left, #73a8e6, #6784e4);
-  border-bottom-right-radius: 50%;
+  border-radius:50% 12px 50% 0;
   z-index: -1;
 }
 
@@ -65,7 +66,7 @@ input {
   font-size: 2rem;
   position: absolute;
   top: 3rem;
-  left: 10rem;
+  left: 40%;
 }
 
 .form-sign-up {
